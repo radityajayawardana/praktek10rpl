@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan js</title>
+	<style type="text/css">
+		body {
+			background-color: red;
+		}
+		p {
+			color: red;
+		}
+		button {
+			background-color: white;
+			border-radius: 10px;
+			padding: 8px;
+		}
+		.p {
+			margin-top: 10px;
+			margin-bottom: 10px;
+			padding: 2px;
+			background-color: white;
+			border-radius: 5px;
+			text-align: center;
+		}
+		.btn {
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="btn">
+<button onclick="klik()">Tambah</button>
+</div>
+<div class="p">
+<p id="teks">0</p>
+<p id="tekss"></p>
+</div>
+<div class="btn">
+<button onclick="klik1()">Kurang</button>
+<button onclick="klik2()">Reset</button>
+</div>
+<script type="text/javascript">
+	let teksbaru = 0;
+	function klik() {
+		teksbaru += 10;
+		document.getElementById('teks').innerHTML = teksbaru;
+		document.getElementById('tekss').innerHTML = "TAMBAH";
+	}
+	
+	function klik1() {
+		teksbaru -= 10;
+		document.getElementById('teks').innerHTML = teksbaru;
+		document.getElementById('tekss').innerHTML = "KURANG";
+	}
+    function klik2() {
+    	teksbaru = 0;
+    	document.getElementById('teks').innerHTML = teksbaru;
+    	document.getElementById('tekss').innerHTML = "RESET";
+    }
+</script>
+</body>
+</html>
